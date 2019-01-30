@@ -1,4 +1,4 @@
-package com.sc.dao;
+package com.sc.webcrawler.script;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,6 @@ public class WebScriptProvider implements ScriptProvider {
             }
         }
 
-        //Collections.sort(scripts);
         return scripts;
     }
 }

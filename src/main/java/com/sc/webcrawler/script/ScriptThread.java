@@ -1,4 +1,4 @@
-package com.sc.dao;
+package com.sc.webcrawler.script;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -46,7 +46,7 @@ public class ScriptThread extends Thread {
                 }
             }
         } catch (final IOException e) {
-            e.printStackTrace();
+            //  Handle any exceptions.
         }
     }
 }

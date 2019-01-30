@@ -1,4 +1,4 @@
-package com.sc.dao;
+package com.sc.webcrawler.link;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 public class WebLinkProvider implements LinkProvider {
-    private static final int RESULT_SIZE = 30;
+    private static final int RESULT_SIZE = 15;
     private static final int TIMEOUT = 5000;
     private static final String URL_REGEX = "/url\\?q=|&sa.*";
     private static final String SEARCH_Q = "https://www.google.com/search?num=" + RESULT_SIZE + "&q=";

@@ -1,4 +1,4 @@
-package com.sc.model;
+package com.sc.webcrawler.model;
 
 public class Constant {
     public static final String WEB_CRAWLER =

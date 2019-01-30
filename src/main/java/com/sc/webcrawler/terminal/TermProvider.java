@@ -1,4 +1,4 @@
-package com.sc.dao;
+package com.sc.webcrawler.terminal;
 
 import java.util.List;
 

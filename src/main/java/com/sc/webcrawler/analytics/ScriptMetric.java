@@ -1,4 +1,4 @@
-package com.sc.analytics;
+package com.sc.webcrawler.analytics;
 
 import java.util.List;
 import java.util.Map;
