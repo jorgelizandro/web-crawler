@@ -42,7 +42,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>main.java.com.sc.webcrawler.AppInitializer</mainClass>
+                            <mainClass>com.sc.webcrawler.AppInitializer</mainClass>
                             <classpathPrefix>dependency-jars/</classpathPrefix>
                         </manifest>
                     </archive>
