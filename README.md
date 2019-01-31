@@ -13,12 +13,15 @@ Regarding the tests, I added some unit tests and ITs, the code coverage isn't 10
 # How to build it
 You only need to use maven as follows:    
 
-    mvn clean install
+    mvn clean package
 
 # How to run it
 Use the following in the terminal:    
     
-    java -jar target/webcrawler-0.0.1-SNAPSHOT.jar
+    java -jar target/webcrawler-1.0.0-SNAPSHOT-jar-with-dependencies.jar
+
+# How to run tests
+    mvn verify
 
 ## Release History
 * 1.0.0
@@ -30,8 +33,7 @@ Use the following in the terminal:
  * Maven
  
 ## Output when the search term is "scalable capital"
-
- __          __  _      _____                    _
+     __          __  _      _____                    _
      \ \        / / | |    / ____|                  | |
       \ \  /\  / /__| |__ | |     _ __ __ ___      _| | ___ _ __
        \ \/  \/ / _ \ '_ \| |    | '__/ _` \ \ /\ / / |/ _ \ '__|

@@ -20,7 +20,7 @@ public class WebLinkProviderIT {
     private static final String SEARCH_TERM = "searchTerm";
     private static final int SITE_COUNT = 5;
     private static final List<String> URLS = getUrlList();
-    private final WebLinkProvider webLinkProvider = new WebLinkProvider();
+    private final LinkProvider webLinkProvider = new WebLinkProvider();
     private ClientAndServer mockServer;
 
     private static List<String> getUrlList() {
@@ -35,12 +35,11 @@ public class WebLinkProviderIT {
     @Before
     public void setUp() throws Exception {
         mockServer = startClientAndServer(1080);
+        writeStaticField(WebLinkProvider.class, "SEARCH_Q", "http://127.0.0.1:1080/search?q=", true);
     }
 
     @Test
     public void getLinks() throws IllegalAccessException {
-        writeStaticField(WebLinkProvider.class, "SEARCH_Q", "http://127.0.0.1:1080/search?q=", true);
-
         new MockServerClient("127.0.0.1", 1080)
                 .when(
                         request()
