@@ -28,6 +28,7 @@ public class AppInitializer {
         dataProvider.printMessage(Constant.SEARCH);
         final List<String> links = linkProvider.getLinks(searchTerm);
         dataProvider.printMessage("\tFound " + links.size() + " links");
+        //dataProvider.printMessages(links);
 
         dataProvider.printMessage(Constant.RETRIEVING_SCRIPTS);
         final List<String> scripts = scriptProvider.getScripts(links);

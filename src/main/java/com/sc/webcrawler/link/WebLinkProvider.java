@@ -10,13 +10,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static java.nio.charset.StandardCharsets.UTF_8;
-
 public class WebLinkProvider implements LinkProvider {
     private static final int RESULT_SIZE = 15;
     private static final int TIMEOUT = 5000;
-    private static final String URL_REGEX = "/url\\?q=|&sa.*";
-    private static final String SEARCH_Q = "https://www.google.com/search?num=" + RESULT_SIZE + "&q=";
+    //private static final String URL_REGEX = "/url\\?q=|&sa.*";
+    private static String SEARCH_Q = "https://www.google.com/search?num=" + RESULT_SIZE + "&q=";
 
     @Override
     public List<String> getLinks(final String searchTerm) {
@@ -32,11 +30,11 @@ public class WebLinkProvider implements LinkProvider {
             for(final Element div : divList) {
                 final Elements elements = div.getElementsByTag("a");
                 final String rawUrl = elements.attr("href");
-                final String sanitizedUrl = rawUrl.replaceAll(URL_REGEX,  "");
-                final String decodedUrl = java.net.URLDecoder.decode(sanitizedUrl, UTF_8.displayName());
+                //final String sanitizedUrl = rawUrl.replaceAll(URL_REGEX,  "");
+                //final String decodedUrl = java.net.URLDecoder.decode(sanitizedUrl, UTF_8.displayName());
 
-                if (decodedUrl.startsWith("http")) {
-                    urls.add(decodedUrl);
+                if (rawUrl.startsWith("http")) {
+                    urls.add(rawUrl);
                 }
             }
         } catch (final IOException e) {
