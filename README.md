@@ -2,7 +2,7 @@
 Java program which counts top Javascript libraries used on web pages found in google
 
 
-# Chosen approach
+# Approach and improvements
 In order to get the result links from google, I decided to parse the web page (I think it's the heaviest operation), but we can improve this by using the Google's custom search API. We will need to get an API Key with a limit rate of 100 daily requests or pay for more $$$.
 
 We're already using threads to retrieve the scripts based on the google links and the result list is sanitized by removing the path and parameters in order to identify duplicated libs.
