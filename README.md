@@ -28,11 +28,11 @@ Use the following in the terminal:
     * SC01: App creation
 
 ## Features
- * Java 1.8
+ * Java 11
  * JSoup
  * Maven
  
-## Output when the search term is "scalable capital"
+## Output when the search term is "java"
      __          __  _      _____                    _
      \ \        / / | |    / ____|                  | |
       \ \  /\  / /__| |__ | |     _ __ __ ___      _| | ___ _ __
@@ -42,26 +42,26 @@ Use the following in the terminal:
                                                                  
     
     Please, introduce the search term:
-    scalable capital
-    
+    java
+
     Processing search page...
-        Found 13 links
-    
+    	Found 15 links
+
     Retrieving scripts...
-        Found 96 scripts
-    
+    	Found 73 scripts
+
     Generating metrics...
-    
+
     The top five is:
     ------------------------------------
-    jquery.min.js=4
-    adsbygoogle.js=3
-    lazyLoadImage.min.js=2
-    script.js=2
-    OneSignalSDK.js=2
+    adsbygoogle.js=11
+    jquery.js=3
+    api.js=3
+    satelliteLib-e598c5b61e39a10b402e048e87dd27b0f1cd2d4c.js=2
+    stl.js=2
     ------------------------------------
 
-    ***Task execution finished*** 
+    ***Task execution finished***
 
 ## Contributing
 
