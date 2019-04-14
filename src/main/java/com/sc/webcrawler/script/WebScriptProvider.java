@@ -18,7 +18,7 @@ public class WebScriptProvider implements ScriptProvider {
         for (final ScriptThread scriptThread : threads) {
             while (scriptThread.isAlive()) {
                 try {
-                    Thread.sleep(500);
+                    scriptThread.join();
                 } catch (final InterruptedException e) {
                     e.printStackTrace();
                 }
